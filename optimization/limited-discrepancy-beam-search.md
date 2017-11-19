@@ -18,4 +18,18 @@ decide to go with).
 If the heuristic function is not necessarily a good guide, then beam search might never end 
 up reaching the goal state.
 
-* We want to retain the _flavor_ of beam search, but we also want 
+* We want to retain the _flavor_ of beam search, but we also want to cover more states (so as 
+to possibly reach the goal state). How do we do this?
+
+_Backtracking_ is the popular answer. The paper first discusses _chronological_ backtracking, where
+the nodes/states backtracked to are the ones that we _just came from_. 
+
+* What is a problem with _chronological backtracking_?
+
+The nodes/states backtracked to are the ones that we just came from recently. But the actual 
+mistake (in having chosen wrong heuristic function, etc.) might have occurred much higher up in the 
+tree, close to the root. 
+
+This argument is reminiscent of the corresponding arguments in neural networks - that the weights of the 
+first few layers are more important, and harder to change (because of vanishing gradients etc. in 
+the backpropagation step).  
