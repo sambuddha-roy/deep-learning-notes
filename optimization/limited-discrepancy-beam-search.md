@@ -25,6 +25,7 @@ _Backtracking_ is the popular answer. The paper first discusses _chronological_ 
 the nodes/states backtracked to are the ones that we _just came from_. 
 
 * What is a problem with _chronological backtracking_?
+
 `
 The nodes/states backtracked to are the ones that we just came from recently. But the actual 
 mistake (in having chosen wrong heuristic function, etc.) might have occurred much higher up in the 
