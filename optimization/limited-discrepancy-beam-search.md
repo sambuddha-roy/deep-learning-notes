@@ -35,11 +35,11 @@ the nodes/states backtracked to are the ones that we _just came from_.
 * What is a problem with _chronological backtracking_?
 
 
-The nodes/states backtracked to are the ones that we just came from recently. But the actual 
-mistake (in having chosen wrong heuristic function, etc.) might have occurred much higher up in the 
-tree, close to the root. 
-
-This argument is reminiscent of the corresponding arguments in neural networks - that the weights of the 
-first few layers are more important, and harder to change (because of vanishing gradients etc. in 
-the backpropagation step).  
-
+>The nodes/states backtracked to are the ones that we just came from recently. But the actual 
+>mistake (in having chosen wrong heuristic function, etc.) might have occurred much higher up in the 
+>tree, close to the root. 
+>
+>This argument is reminiscent of the corresponding arguments in neural networks - that the weights of the 
+>first few layers are more important, and harder to change (because of vanishing gradients etc. in 
+>the backpropagation step).  
+>
