@@ -35,4 +35,16 @@ to possibly reach the goal state). How do we do this?
 >This argument is reminiscent of the corresponding arguments in neural networks - that the weights of the 
 >first few layers are more important, and harder to change (because of vanishing gradients etc. in 
 >the backpropagation step).  
->
+
+* What is _limited discrepancy search_?
+
+This is an alternative to chronological backtracking. Imagine the nodes of a tree, say in a layer. Suppose, 
+the beam width B = 1. We allow the algorithm to explore a node that introduces a _discrepancy_ i.e. 
+it is not the _extremum_ according to the heuristic function value. Call such a move a _discrepancy move_
+if the algorithm does utilize such a move. 
+
+The _limited_ in _limited discrepancy_
+means that the algorithm is also provided a total _upper bound_ on the number of discrepancy moves allowed. 
+
+Originally, limited discrepancy search was implemented only for binary trees where it is clear what the discrepancy
+move at any step should be. 
