@@ -5,4 +5,7 @@ Basic Idea:
 We want to _speed up_ how a machine reads a text. Allow the machine to _skim_ over the
 text. For skimming, we have to specify a few more parameters. Thus, the paper considers
 parameters for
-1.
+
+1. the number of jumps allowed
+2. the max-length of any one jump
+3.
