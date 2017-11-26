@@ -8,4 +8,4 @@ parameters for
 
 1. the number of jumps allowed
 2. the max-length of any one jump
-3.
+3. the number of tokens read between two jumps
