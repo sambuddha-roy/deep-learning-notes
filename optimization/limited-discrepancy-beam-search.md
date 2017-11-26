@@ -1,5 +1,5 @@
 ### [Limited Discrepancy Beam Search](https://www.ijcai.org/Proceedings/05/Papers/0596.pdf)
-#### Authors: David Furcy, Sven Koenig.
+#### Authors: [David Furcy](http://www.uwosh.edu/faculty_staff/furcyd/), [Sven Koenig](http://idm-lab.org/).
 
 * What is Beam Search?
 
@@ -13,7 +13,6 @@
 >According to a _heuristic_ function that gives a _value_ to each node. We sort the nodes in 
 >a layer by the heuristic value, and pick up the top-k (where k is the size the beam that we 
 >decide to go with).
-
 
 * So beam search may be faster, with a smaller memory footprint. Where/when does it fail?
 
@@ -48,3 +47,7 @@ means that the algorithm is also provided a total _upper bound_ on the number of
 
 Originally, limited discrepancy search was implemented only for binary trees where it is clear what the discrepancy
 move at any step should be. 
+
+* How is _limited discrepancy search_ implemented for arbitrary trees?
+
+Two things. (1) handle branching factors, and (2) avoid cycles. 
