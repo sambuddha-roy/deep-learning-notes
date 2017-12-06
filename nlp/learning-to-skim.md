@@ -2,7 +2,7 @@
 #### Authors: Adams Wei Yu, Hongrae Lee, Quoc V. Le
 #### Venue: ACL 2017
 
-##### Basic Idea:
+#### Basic Idea:
 
 We want to _speed up_ how a machine reads a text (with the
 end goal being speeding up classification tasks - such as, say, sentiment
@@ -29,7 +29,7 @@ parameters for
 2. the max-length of any one jump
 3. the number of tokens read between two jumps
 
-##### Training:
+#### Training:
 - train a LSTM
 - usual: 
     - will have the hidden state. 
@@ -72,14 +72,14 @@ action sequence_), and see how the specific task performs
 over the samples is an approximate objective function
 to optimize.
 
-##### Inference
+#### Inference
 given an actual sequence, find out how/when to jump. 
 two ways
 - sampling. take most probable jumping step suggested by
 softmax distribution.
 - or, greedy evaluation. 
 
-##### Experiments:
+#### Experiments:
 - **A toy problem:**
 We are given a permutation
 of the numbers (0, 1,..., n-1) and the function that we
