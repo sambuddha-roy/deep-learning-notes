@@ -104,4 +104,3 @@ tasks faster.
 - non-differentiability ()because of discrete choices/
 actions) can be circumvented by learning distributions
 instead.
-- 
