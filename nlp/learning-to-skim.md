@@ -30,7 +30,7 @@ parameters for
 3. the number of tokens read between two jumps
 
 #### Training:
-- train a LSTM
+- train a LSTM. overall LSTM will be called LSTM-jump.
 - usual: 
     - will have the hidden state. 
     - also will have
@@ -101,6 +101,11 @@ datasets.
 #### Take-aways & questions
 - jumping over text can make some classification 
 tasks faster. 
-- non-differentiability ()because of discrete choices/
+- non-differentiability (because of discrete choices/
 actions) can be circumvented by learning distributions
 instead.
+- technical detail: the paper keeps the max-length of any
+one jump as a parameter, while the other two are actually
+hyperparameters. what happens if we read a variable number 
+ of tokens before the next jump (instead of keeping 
+ a variable jump, fixed number of tokens)?
