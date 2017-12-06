@@ -1,7 +1,8 @@
 ### [Learning to Skim Text](http://www.cs.cmu.edu/~weiyu/Adams_Wei_Yu_Homepage_files/acl17cr.pdf)
 #### Authors: Adams Wei Yu, Hongrae Lee, Quoc V. Le
+#### Venue: ACL 2017
 
-#####Basic Idea:
+##### Basic Idea:
 
 We want to _speed up_ how a machine reads a text (with the
 end goal being speeding up classification tasks - such as, say, sentiment
@@ -78,7 +79,7 @@ two ways
 softmax distribution.
 - or, greedy evaluation. 
 
-#####Experiments:
+##### Experiments:
 - **A toy problem:**
 We are given a permutation
 of the numbers (0, 1,..., n-1) and the function that we
@@ -97,9 +98,10 @@ datasets.
     - sentence level question-answering.
 
 
-#### Take-aways
+#### Take-aways & questions
 - jumping over text can make some classification 
 tasks faster. 
 - non-differentiability ()because of discrete choices/
 actions) can be circumvented by learning distributions
 instead.
+- 
